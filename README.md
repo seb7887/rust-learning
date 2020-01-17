@@ -22,3 +22,9 @@ Printing is handled by a series of `macros` defined in `std::fmt` some which inc
 - `println!`: same as print! but a newline is appended
 - `eprint!`: same but printed to the standard error (`io::stderr`)
 - `eprintln!`: same but with a newline
+
+## Debug
+
+The fmt::Debug trait makes this very straightforward. All types can derive (automatically create) the fmt::Debug implementation. This is not true for fmt::Display which must be manually implemented.
+
+## Display
