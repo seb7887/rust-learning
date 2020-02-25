@@ -27,4 +27,26 @@ Printing is handled by a series of `macros` defined in `std::fmt` some which inc
 
 The fmt::Debug trait makes this very straightforward. All types can derive (automatically create) the fmt::Debug implementation. This is not true for fmt::Display which must be manually implemented.
 
-## Display
+## Primitives
+
+- **signed integers**: `i8`, `i16`, `...` `isize` (pointer size)
+- **unsigned integers**: same with `u` prefix
+- **floating point**: `f32` and `f64`
+- **char** unicode values
+- **bool** true/false
+- **()** empty tuple
+
+- **arrays** [1,2,3]
+- **tuples** (1, true)
+
+## Variables
+
+### No mutable
+
+Cannot be changed
+`let variable: bool = true`
+
+### Mutable
+
+Can be changed
+`let mut variable: bool = true`
