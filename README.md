@@ -50,3 +50,8 @@ Cannot be changed
 
 Can be changed
 `let mut variable: bool = true`
+
+## Expressions
+
+- Blocks are expressions too, so they can be assigned to the place expression such as a local variable
+- To end with a **semicolon** a block expression is to return a `()`
