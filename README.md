@@ -55,3 +55,10 @@ Can be changed
 
 - Blocks are expressions too, so they can be assigned to the place expression such as a local variable
 - To end with a **semicolon** a block expression is to return a `()`
+
+## Functions
+
+- If the return value is an expression, don't put a semicolon at the end
+  `lhs % rhs == 0`
+- If the return value is a sentence, put a semicolon at the end
+  `return true;`
