@@ -104,3 +104,7 @@ bar = { path = "../bar" } # from a path in the local filesystem
 - `cargo build`: build
 - `cargo run`: build and run
 - `cargo test`: run tests
+
+## Traits
+
+- A collection of methods defined for an unknown type: `Self`
