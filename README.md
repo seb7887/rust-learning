@@ -62,3 +62,45 @@ Can be changed
   `lhs % rhs == 0`
 - If the return value is a sentence, put a semicolon at the end
   `return true;`
+
+## Cargo
+
+- Is the official Rust package management tool. It has integration with `crates.io` (the official Rust package registry)
+
+### Create a new Rust binary
+
+`cargo new foo`
+
+### Create a new Rust library
+
+`cargo new --lib foo`
+
+### File structure
+
+```
+foo
+|- Cargo.toml
+|- src
+  |- main.rs
+```
+
+### Cargo.toml example
+
+```toml
+[package]
+name = "foo"
+version = "0.1.0"
+authors = "Sebastian Matias Segura"
+build = "build.rs" # build script
+
+[dependencies]
+clap = "2.27.1" # from crates.io
+rand = { git = "https://github.com/rust-land-nursery/rand" } # from online repo
+bar = { path = "../bar" } # from a path in the local filesystem
+```
+
+### Cargo commands
+
+- `cargo build`: build
+- `cargo run`: build and run
+- `cargo test`: run tests
